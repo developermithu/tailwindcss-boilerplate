@@ -1,15 +1,15 @@
-## Tailwind CSS Boilerplate V2.2
+# Tailwind CSS Boilerplate V2.2
 
 How To Use
 ```
-git clone url
-cd folder
+git clone https://github.com/developermithu/tailwindcss-boilerplate.git
+cd tailwindcss-boilerplate
 npm install
 npm run build
 npm run prod (for minify css)
 ```
 
-For Windows Users:
+For Windows Users (Default):
 ```
   "scripts": {
     "build": "set TAILWIND_MODE=watch&postcss tailwind.css -o ./dist/style.css -w --verbose",
