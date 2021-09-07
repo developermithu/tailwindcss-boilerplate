@@ -10,6 +10,12 @@ npm install
 npm run build
 npm run prod (for minify css)
 ```
+To Create New Repository
+```
+delete .git hidden file manually or command 
+rm -rf .git
+git remote -v (check current repository)
+```
 
 For Windows Users (Default):
 ```
