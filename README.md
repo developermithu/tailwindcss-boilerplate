@@ -1,5 +1,7 @@
 # Tailwind CSS Boilerplate V2.2
 
+![template](/dist/img/template.jpeg)
+
 How To Use
 ```
 git clone https://github.com/developermithu/tailwindcss-boilerplate.git
