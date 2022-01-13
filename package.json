@@ -1,19 +1,20 @@
 {
   "name": "tailwindcss-boilerplate",
-  "version": "1.0.0",
+  "version": "3.0.13",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "set TAILWIND_MODE=watch&postcss tailwind.css -o ./dist/style.css -w --verbose",
-    "prod": "set NODE_ENV=production&postcss tailwind.css -o ./dist/style.css"
+    "watch": "npx tailwindcss -i ./input.css -o ./dist/output.css --watch",
+    "prod": "set NODE_ENV=production&postcss ./input.css -o ./dist/output.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.3.4",
+    "autoprefixer": "^10.4.2",
     "cssnano": "^5.0.8",
+    "postcss": "^8.4.5",
     "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.2.11"
+    "tailwindcss": "^3.0.13"
   }
 }
