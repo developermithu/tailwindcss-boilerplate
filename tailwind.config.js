@@ -8,12 +8,23 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
 
   theme: {
-    extend: {},
+    fontFamily: {
+      'roboto': ['Roboto'],
+    },
+
+    extend: {
+      colors: {
+        'primary': '#113060',
+        'secondary': '#EE342B',
+      },
+    },
   },
 
   variants: {
     extend: {},
   },
 
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
