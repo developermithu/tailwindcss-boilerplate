@@ -29,6 +29,7 @@ npm run watch (set package.json)
 ```
 
 Have To Do
+- Update Version
 - Base style (h1,p)
 - Reusable components (btn)
 - Screen Size (sm,md)
