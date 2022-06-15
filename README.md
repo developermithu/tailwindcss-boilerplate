@@ -27,3 +27,8 @@ npx tailwindcss init -p
 npm install -D cssnano (optional - for minify css)
 npm run watch (set package.json)
 ```
+
+Have To Do
+- Base style (h1,p)
+- Reusable components (btn)
+- Screen Size (sm,md)
