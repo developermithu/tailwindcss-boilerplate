@@ -1,21 +1,17 @@
 module.exports = {
-  mode: 'jit',
+  mode: "jit",
 
-  content: [
-    "./dist/**/*.{html,js}"
-  ],
-
-  darkMode: false, // or 'media' or 'class'
+  content: ["./dist/**/*.{html,js}"],
 
   theme: {
     fontFamily: {
-      'roboto': ['Roboto'],
+      roboto: ["Roboto"],
     },
 
     extend: {
       colors: {
-        'primary': '#113060',
-        'secondary': '#EE342B',
+        primary: "#c44062",
+        secondary: "#ea6a6f",
       },
     },
   },
@@ -24,7 +20,5 @@ module.exports = {
     extend: {},
   },
 
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
-}
+  plugins: [require("@tailwindcss/forms")],
+};

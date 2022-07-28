@@ -1,6 +1,6 @@
-# Tailwind CSS Boilerplate V3.0.13
+# Tailwind CSS Boilerplate V3.1.6
 
-![template](/dist/img/template.jpeg)
+![template](/dist/img/template.png)
 
 How To Use
 ```
@@ -19,17 +19,3 @@ git remote -v (check current repository)
 ```
 
 
-How To Build From Scratch
-```
-npm init -y
-npm install -D tailwindcss@latest postcss-cli@latest autoprefixer@latest
-npx tailwindcss init -p
-npm install -D cssnano (optional - for minify css)
-npm run watch (set package.json)
-```
-
-Have To Do
-- Update Version
-- Base style (h1,p)
-- Reusable components (btn)
-- Screen Size (sm,md)
