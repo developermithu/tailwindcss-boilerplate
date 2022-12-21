@@ -1,21 +1,23 @@
 {
   "name": "tailwindcss-boilerplate",
-  "version": "3.0.13",
+  "version": "3.2.4",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "npx tailwindcss -i ./input.css -o ./dist/output.css --watch",
-    "prod": "set NODE_ENV=production&postcss ./input.css -o ./dist/output.css"
+    "dev": "npx tailwindcss -i ./input.css -o ./src/output.css --watch",
+    "prod": "set NODE_ENV=production&postcss ./input.css -o ./src/output.css"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["tailwindcss-boilerplate", "tailwindcss v3 boilerplate", "tailwindcss version 3"],
+  "author": "developermithu",
   "license": "ISC",
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.0",
-    "autoprefixer": "^10.4.7",
+    "autoprefixer": "^10.4.13",
     "cssnano": "^5.0.8",
-    "postcss": "^8.4.14",
+    "postcss": "^8.4.20",
     "postcss-cli": "^8.3.1",
-    "tailwindcss": "^3.1.6"
+    "prettier": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tailwindcss": "^3.2.4"
   }
 }

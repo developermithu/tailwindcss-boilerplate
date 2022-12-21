@@ -1,9 +1,20 @@
-module.exports = {
-  mode: "jit",
+/** @type {import('tailwindcss').Config} */
 
-  content: ["./dist/**/*.{html,js}"],
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
 
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
+    },
+
     fontFamily: {
       roboto: ["Roboto"],
     },
@@ -14,10 +25,6 @@ module.exports = {
         secondary: "#ea6a6f",
       },
     },
-  },
-
-  variants: {
-    extend: {},
   },
 
   plugins: [require("@tailwindcss/forms")],

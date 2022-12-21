@@ -1,9 +1,67 @@
 /**
-Tailwind CSS Version: 3.1.6
+Tailwind CSS Version: 3.2.4
 Author: developermithu
 **/
-
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins.
+ */
+@layer base {
+  body {
+    @apply bg-gradient-to-r from-secondary to-primary p-5 font-roboto text-gray-300 antialiased dark:from-gray-700 dark:to-gray-900 dark:text-[#94a3b8];
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-white dark:text-[#e2e8f0];
+  }
+
+  h1 {
+    @apply text-4xl md:text-6xl;
+  }
+
+  p {
+    @apply text-lg;
+  }
+
+  /**
+ * This injects Tailwind's component classes and any component classes
+ * registered by plugins.
+ */
+  @layer components {
+    .btn {
+      @apply rounded border border-white px-8 py-2 transition duration-300 hover:bg-white hover:text-primary dark:border-[#e2e8f0];
+    }
+  }
+
+  /**
+ * This injects Tailwind's utility classes and any utility classes registered
+ * by plugins.
+ */
+  @layer utilities {
+    .filter-none {
+      filter: none;
+    }
+    .filter-grayscale {
+      filter: grayscale(100%);
+    }
+  }
+
+  /**
+ * Use this directive to control where Tailwind injects the hover, focus,
+ * responsive, dark mode, and other variants of each class.
+ *
+ * If omitted, Tailwind will append these classes to the very end of
+ * your stylesheet by default.
+ */
+  @tailwind variants;
+}
